@@ -1,0 +1,36 @@
+Assignment name  : build_tree_challenge
+Expected files   : build_tree_challenge.c
+Allowed functions: malloc, atoi
+--------------------------------------------------------------------------------
+
+Complete a function that will contain an algorithm for building a binary search tree (BST).
+The function will be in build_tree_challenge.c.
+
+Do not change the content of the ./src folder to ensure the script gives a proper result,
+but feel free to inspect it for a better understanding of the task.
+
+The script will generate 100 random numbers (100 arguments to be precise) and pass them to your program.
+Your task is to complete a function that will build a binary search tree according to the structure provided.
+After completing the main assignment, there will be a bonus.
+
+When you think you're ready, execute the ./grademe.sh and wait for the results.
+
+
+FAQ:
+
+1. A Binary Search Tree is a data structure used in computer science for organizing and storing data in a sorted manner.
+Each node in a Binary Search Tree has at most two children: a left child and a right child. The left child contains
+values less than the parent node, and the right child contains values greater than the parent node. This hierarchical
+structure allows for efficient searching, insertion, and deletion operations on the data stored in the tree.
+
+2. There should be at least two nodes for a script to visualize the result.
+
+3. For a visual representation, you can find a "binary_search_tree_example.png" in the subject folder.
+
+4. The structure:
+
+typedef struct	s_tree {
+	int	    val;
+	struct	s_tree	*left;
+	struct	s_tree	*right;
+}t_tree;
